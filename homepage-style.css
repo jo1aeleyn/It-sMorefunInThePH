@@ -1,0 +1,388 @@
+* {
+box-sizing: border-box;
+margin:0;
+
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #FEFCF3;
+  
+}
+
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255,0.75),rgba(255,255,255,0.75)), url('finals/sidenavbg.jpg');
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15px;
+  
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #285430;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  height:15px;
+  margin-right:20px;
+}
+i {
+  margin-right: 15px;
+}
+
+.sidebar a:hover {
+ color: #A4BE7B;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-size: 36px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #5F8D4E;
+  color: #285430;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #A4BE7B;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+header {
+  background-image: url("https://media.audleytravel.com/-/media/images/home/southeast-asia/the-philippines/letterbox-images/new-istock/istock_000015953292_kayangan_lake_coron_island.jpg?q=79&w=1920&h=640");
+  background-repeat: no-repeat;
+  padding: 20px;
+  text-align: center;
+  font-family: Georgia;
+  color: white;
+  position:sticky;
+  top:0;
+  overflow:hidden;
+  width:100%;
+}
+
+iframe{
+float:right;
+margin-top: 10px;
+}
+
+img.profile-img{
+	padding:10px;
+	 height: auto;
+	 float:left;	 
+	 max-width:100%;
+	 display:block;
+}
+
+
+div.gallery {
+  border: 1px solid #ccc;
+  background-color:#FAF7F0;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  max-width: 100%;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+img.par {
+  float: right;
+  border: 2px solid black;
+  margin: 0px 0px 15px 20px;
+}
+
+table.GeneratedTable {
+width:100%;
+background-color:rgba(0, 0, 0, 0);
+border-collapse:collapse;border-width:1.px;
+border-color:#336600;
+border-style:solid;
+color:#000000;
+
+
+
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+border-width:1.px;
+border-color:#336600;
+border-style:solid;
+padding:3px;
+
+}
+
+table.GeneratedTable thead {
+background-color:#CCFF99;
+}
+
+h2.title{
+	background-color:#5F8D4E
+}
+h2.subtitle{
+	background-color:#A4BE7B;
+	padding-left:50px:
+}
+
+img.icon{
+
+	float:left;
+}
+h1{
+	padding: 10px;
+	background-color:#5F8D4E
+}
+h2.subtitle1{
+	background-color:#9ED5C5;
+	
+	width:100%;
+	
+}
+#phmap{
+	background-image: linear-gradient(rgba(255, 255, 255,0.75),rgba(255,255,255,0.90)), 
+	url('finals/phmap2.png');
+	background-repeat: no repeat;
+	background-size: cover;
+	text-align: justify;
+
+
+}
+p {
+	text-align: justify;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	text-indent: 50px;
+}
+
+.dropdown {
+  
+  display: inline-block;
+  float: left;
+  border: 2px solid black;
+  margin: 10px 20px 0px 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #285430;
+  padding:60px;
+  padding-left:0px;
+	margin: -16px;
+
+}
+footer li{
+	display:inline;
+	
+}
+footer ul{
+	margin:0px;
+}
+
+.footerbutton {
+	
+	box-shadow:inset -1px 0px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:17px;
+	font-weight:bold;
+	padding:9px 15px;
+	text-decoration:none;
+}
+.footerbutton:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.footerbutton:active {
+	position:relative;
+	top:1px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section{
+		height:100%;
+}
+
+#history{
+	background-color:#FAF7F0;
+	
+}
+#geography{
+	background-color:#FAF7F0;
+}
+#demographics{
+	background-color:#FAF7F0;
+	
+}
+#culture{
+	background-color:#FAF7F0;
+}
+#tourist{
+	background-color:#FAF7F0;
+	
+}
+
+#About{
+	background-color:#FEFCF3;
+}
+
+@media screen and (max-width: 700px)  {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 9px; text-align: center; float: none;}
+  .sidebar {
+  height: 100%;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255,0.75),rgba(255,255,255,0.75)), url('finals/sidenavbg.jpg');
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 7px; 
+}
+.sidebar img{
+	width:50px;
+}
+
+.sidebar a {
+  padding: 4px 4px 4px 16px;
+  text-decoration: none;
+  font-size: 9px;
+  color: #285430;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  height:3px;
+  margin-right:10px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 18px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.openbtn {
+  font-size: 10px;
+  cursor: pointer;
+  background-color: #5F8D4E;
+  color: #285430;
+  padding: 5px 7px;
+  border: none;
+}
+p {padding-top: 5px;padding-left: 20px;padding-right: 20px;font-size:10px;}
+.title {font-size:20px;}
+.subtitle{font-size:20px;}
+
+ iframe {display:none;}
+ header {
+  padding: 5px;
+  height: auto;
+  width:100%;
+  align-items:center;
+  }
+  img.profile-img{
+	padding:0px;
+	 height: 100%;
+	 float:center;	 
+	 width:40px;
+	 height:auto;
+
+}
+.responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .responsive {
+    width: 100%;
+  }
+  table.GeneratedTable td, table.GeneratedTable th {
+	  font-size:10px;
+	  width:auto;
+  }
+   footer {
+  padding:30px;
+  padding-left:0px;
+	margin: -16px;
+}
+.footerbutton {
+	font-size:9px;
+	font-weight:normal;
+	padding:5x 7px;
+
+}
+h2 {
+	font-size:20px;
+}
+}
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--CSS link-->
+    <link rel="stylesheet" href="video gallery.css">
+    <!--Title -->
+	<title>Video Gallery</title>
+</head>
+<body>
+	<!--Videos -->
+    <div class="container">
+	<br><br><center><h1> Video Gallery </h1></center>
+	<div class="video-container">
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/P-I4Bay5SXo" title="THE HISTORY OF THE PHILIPPINES in 12 minutes" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/9Mzw4Ln-nNk" title="The Philippines: History, Geography, Economy & Culture" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/Db19KNNSWa0" title="Virtual Tour | It's More Fun with You in Manila (Intramuros)" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/IHgC7GOOF7Q" title="Underground River in Sabang | Puerto Princesa | Palawan | Philippines 2017" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/MPg-b3reh_g" title="Explore Boracay: The Ultimate Travel Guide 2019" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/pVS8hk6wY4o" title="Soar Over the Chocolate Hills in the Philippines | National Geographic" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/UOKUg0cQK2I" title="GoPro: Experience the thrill of White Water Rafting In Cagayan de Oro" frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<div class="video"><iframe width="1519" height="562" src="https://www.youtube.com/embed/uKeVxH27lJ0" title="Cloud 9 Surf Break on Siargao island, Philippines in 4k" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</div>
+	</div>
+	
+<script>
+	document.querySelectorAll('.video-container').forEach(vid => {
+	vid.onlick = () => {
+		document.querySelectorAll('.popup-video').style.display = 'block';
+		document.querySelectorAll('.popup-video video').src = vid.getAttribute('src');
+	}
+	});
+	document.querySelectorAll('.popup-video span').onclick = () =>{
+		document.querySelectorAll('.popup-video').style.display = 'none';
+	}
+	document.querySelector('.popup-video video').pause();
+	
+</script>
+
+
+</body>
+</html>
